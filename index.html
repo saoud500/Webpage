@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Janamashtmi - Saoud Tauheed</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --gold: #FFD700;
+            --red: #D52817;
+            --pink: #FF6B6B;
+            --dark-red: #8B0000;
+            --cream: #FFF5E0;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cream);
+            color: var(--dark-red);
+            line-height: 1.6;
+        }
+        
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(135deg, var(--red), var(--dark-red));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 5px var(--gold); }
+            to { text-shadow: 0 0 15px var(--gold), 0 0 20px var(--gold); }
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        
+        /* Diya Decoration */
+        .diya {
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            bottom: -30px;
+            left: 0;
+            background: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c94708cf-1e74-434b-a759-32b0e155d305.png') center/cover no-repeat;
+            z-index: 1;
+            background-attachment: fixed;
+        }
+        
+        /* Content Section */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .rakhi-display {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .rakhi-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            width: 250px;
+            text-align: center;
+        }
+        
+        .rakhi-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .rakhi-image {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .rakhi-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        
+        .rakhi-info {
+            padding: 1rem;
+        }
+        
+        /* Message Section */
+        .message-section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin: 3rem 0;
+            position: relative;
+            text-align: center;
+        }
+        
+        .message-section h2 {
+            color: var(--red);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .message-text {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Animation Elements */
+        .floating-rakhi {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3f93a65-b967-4fcf-85a7-29069eec2739.png') center/contain no-repeat;
+            animation: float 8s ease-in-out infinite;
+            opacity: 0.7;
+            z-index: -1;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-red);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .rakhi-card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        /* Interactive Element */
+        .typing-effect {
+            font-family: 'Courier New', monospace;
+            border-right: 3px solid;
+            width: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 4s steps(40) 1s forwards, blink-caret .75s step-end infinite;
+            margin: 0 auto;
+            max-width: fit-content;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--gold); }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>CHANDI CONVENT SEN.SEC. SCHOOL</h1>
+        <p>Wishing you a joyous Janmashtami filled with love, laughter, and Krishna’s blessings</p>
+    </header>
+    
+    <div class="container">
+        <div class="message-section">
+            <h2>“May the blessings of Lord Krishna fill your life with happiness, peace, and prosperity.”</h2>
+            <div class="message-text typing-effect" style="--type-length: 500">
+               Happy Janmashtami...!
+            </div>
+            
+            <div class="floating-rakhi" style="top: 20px; left: 20px;" alt="Traditional rakhi with golden threading and red beads"></div>
+            <div class="floating-rakhi" style="top: 80px; right: 30px;" alt="Colorful rakhi with decorative stones and patterns"></div>
+            <div class="floating-rakhi" style="bottom: 40px; left: 50px;" alt="Floral design rakhi with silk thread weaving"></div>
+        </div>
+        
+                    <p></p>
+                    <p></p>
+        <h2 style="text-align: center; color: var(--dark-red);">“On this auspicious day of Janmashtami, may Lord Krishna’s flute invite the melody of love and happiness into your life.”
+
+        </h2>
+        <div class="rakhi-display">
+          
+            
+            <div class="rakhi-card">
+                <div class="rakhi-image">
+                    <img src="/k1.jpg" alt="Modern minimalist rakhi in deep red with a golden Om symbol">
+                </div>
+                <div class="rakhi-info">
+                    <h1><i>Happy</i></h1>
+                </div>
+            </div>
+            
+            <div class="rakhi-card">
+                <div class="rakhi-image">
+                    <img src="/k3.jpg" alt="Royal blue silk thread rakhi with silver and pearl decoration">
+                </div>
+                <div class="rakhi-info">
+                    <h1><i>Janamashtmi</i></h1>
+                </div>
+            </div>
+            
+            <div class="rakhi-card">
+                <div class="rakhi-image">
+                    <img src="/k2.webp" alt="Handcrafted rakhi with multi-colored threads and stone patterns">
+                </div>
+                <div class="rakhi-info">
+                    <h1><i>To All</i></h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="message-section">
+            <h2>Celebreate Janamashtmi with chandi Convent School</h2>
+            <video width="700" height="300" controls>
+    <source src="/kv1.mp4" type="video/mp4">
+    
+  </video>
+            <p>May the teachings of Lord Krishna encourage you to live a meaningful life!</p>
+            
+            <p id="dynamic-message">Hope your day is filled with love, joy, and the sweet memories of Krishna’s childhood!</p>
+            
+            <button id="message-btn" style="background: var(--red); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 5px; font-size: 1rem; cursor: pointer; margin-top: 1rem;">
+                Send Wishes!
+            </button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>
+Wishing you and your family a blessed Janmashtami filled with peace and happiness!</p>
+        <p>www.chandiconventschool.com|| Khutar road gangsara powayan,Shahjahanpur ||Made with <a href="https://example.com/saoudtauheed" style="color: var(--gold); text-decoration: none;">Saoud Tauheed faculty of IT</a></p>
+    </footer>
+    
+    <script>
+        // Interactive elements
+        document.getElementById('message-btn').addEventListener('click', function() {
+            const messages = [
+                "Let us celebrate the birth of our dear Kanha with prayers and sweets!",
+                "Sending you warm wishes on this divine occasion of Janmashtami.",
+                "This Janmashtami, may you dance like Radha and dream like Krishna!.",
+                "Let the little Kanha bring a lot of smiles and happiness into your home!."
+            ];
+            
+            const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById('dynamic-message').textContent = randomMsg;
+            
+            // Create a floating rakhi effect
+            const floatingRakhi = document.createElement('div');
+            floatingRakhi.className = 'floating-rakhi';
+            floatingRakhi.style.left = Math.random() * 100 + '%';
+            floatingRakhi.style.top = Math.random() * 100 + 'px';
+            floatingRakhi.style.animationDuration = (Math.random() * 5 + 3) + 's';
+            floatingRakhi.alt = "Animated floating rakhi with golden threads";
+            
+            document.body.appendChild(floatingRakhi);
+            
+            // Remove after animation
+            setTimeout(() => {
+                floatingRakhi.remove();
+            }, 8000);
+        });
+        
+        // Typing effect for messages
+        const typingElements = document.querySelectorAll('.typing-effect');
+        typingElements.forEach(el => {
+            const text = el.textContent;
+            el.textContent = '';
+            
+            setTimeout(() => {
+                el.style.width = 'auto';
+                el.style.borderRight = 'none';
+                el.textContent = text;
+            }, parseInt(el.style.getPropertyValue('--type-length') || 2000));
+        });
+    </script>
+</body>
+</html>
